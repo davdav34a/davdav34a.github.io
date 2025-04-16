@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://davdav34a.github.io/sitemap.xml
