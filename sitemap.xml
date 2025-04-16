@@ -1,27 +1,33 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://davdav34a.github.io/</loc>
-    <lastmod>2025-04-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://davdav34a.github.io/menu.html</loc>
-    <lastmod>2025-04-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://davdav34a.github.io/eventi.html</loc>
-    <lastmod>2025-04-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://davdav34a.github.io/contatti.html</loc>
-    <lastmod>2025-04-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
+    <url>
+        <!-- The main URL of the website -->
+        <loc>https://davdav34a.github.io/</loc>
+        <!-- Last modified date of the homepage -->
+        <lastmod>2025-04-16</lastmod>
+        <!-- Frequency of changes for this page -->
+        <changefreq>weekly</changefreq>
+        <!-- Priority of the homepage -->
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <!-- URL for the menu page -->
+        <loc>https://davdav34a.github.io/menu.html</loc>
+        <lastmod>2025-04-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <!-- URL for the events page -->
+        <loc>https://davdav34a.github.io/eventi.html</loc>
+        <lastmod>2025-04-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <!-- URL for the contact page -->
+        <loc>https://davdav34a.github.io/contatti.html</loc>
+        <lastmod>2025-04-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
 </urlset>
