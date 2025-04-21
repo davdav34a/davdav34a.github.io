@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Amita&display=swap');
+
+header {
+    height: 20vh;
+    padding-left: 5%;
+    background-color: #ffffffde;
+    opacity: 0.55;
+}
+
+header img {
+    height: 20vh;
+
+}
+
+
+
+
+
+footer {
+    padding-left: 5%;
+    width: 100%;
+    background-color: #ffffffde;
+    opacity: 0.55;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+#privacyP,
+#termsP {
+    margin-bottom: 20px;
+}
+
+
+aside {
+    display: flex;
+    flex-direction: column;
+}
+
+aside a {
+    background-color: #ffffffde;
+    opacity: 0.55;
+    width: 40%;
+    height: 15vh;
+    padding-left: 5%;
+    display: flex;
+    align-items: flex-end;
+    font-size: xx-large;
+    ;
+    width: 40%;
+    text-shadow: 2px 2px white;
+    color: black;
+    text-decoration: none
+}
+
+p,
+h2 {
+    background-color: #ffffffde;
+    opacity: 0.55;
+    margin: 0
+}
+
+p {
+    padding-left: 5%;
+}
+
+h2 {
+    padding-left: 2%;
+}
+
+aside a:hover {
+    font-weight: bolder;
+    font-size: xxx-large;
+    box-shadow: inset -2px -2px 0px 2px black;
+}
+
+html {
+    height: 100vh;
+}
+
+article img {
+    width: 100%;
+}
+
+.pin {
+    height: 24px;
+    width: 24px;
+    margin-top: -12px;
+
+}
+
+#logo_container img {
+    animation-duration: 6s;
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 0.99);
+}
+
+.pic_info {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-size: larger;
+}
+
+article:hover,
+article:active {
+    animation: pin-animation 4s;
+    animation-timing-function: ease-in-out;
+    transform-origin: top center;
+}
+
+@keyframes pin-animation {
+    25% {
+        rotate: 6deg;
+    }
+
+    50% {
+        rotate: -4deg;
+    }
+
+    75% {
+        rotate: 2deg;
+    }
+
+    100% {
+        rotate: 0deg
+    }
+}
+
+
+#pictures {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+    margin: 50px
+}
+
+#pictures h3 {
+    width: min-content;
+
+}
+
+article {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 10px 10px 5px #000000ab;
+    background-color: #eedcba;
+    padding: 0px 20px 20px 20px;
+    margin-top: 30px;
+    max-width: 430px;
+}
+
+iframe {
+    width: 90%;
+    margin: 10px 0
+}
+
+#info img {
+    aspect-ratio: 1/1;
+    height: 40px;
+    background-color: #ffffffde;
+    opacity: 0.55;
+    padding-right: 5px;
+}
+
+#info h2 {
+    height: 40px
+}
+
+#info span {
+    display: flex;
+    margin-bottom: 10px;
+    width: 90%;
+}
+#info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+article a {
+    display: flex;
+    justify-content: center
+}
+
+th {
+    width: 20%;
+}
+
+table {
+    width: 100%;
+    background-color: #ffffffde;
+    opacity: 0.55;
+}
+
+#benefits {
+    width: 60%;
+}
+
+.shortTd {
+    text-align: center;
+}
+
+body {
+    justify-content: space-between;
+    margin: 0;
+    font-family: 'Amita', cursive;
+    box-shadow: inset 10px 10px 20px 0px #0000004d;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    animation: back-animation 30s infinite;
+    background-image: url("./mountain.jpg");
+    animation-timing-function: ease-in-out;
+}
+#body_photos{
+    animation:none
+}
+
+@keyframes back-animation {
+    0% {
+        background-image: url("./mountain.jpg");
+    }
+
+    25% {
+        background-image: url("./mountain2.jpg");
+    }
+
+    50% {
+        background-image: url("./bridge.jpg");
+    }
+
+    75% {
+        background-image: url("./campeggio.jpg")
+    }
+}
+
+
+
+#left_shoe {
+    animation-delay: 3s;
+    animation: walkingL infinite;
+}
+
+#right_shoe {
+    animation: walkingR infinite;
+    animation-delay: 3s;
+}
+
+@keyframes walkingR {
+    0% {
+        opacity: 1
+    }
+
+    50% {
+        opacity: 0.3;
+        transform: scale(0.8) translateX(15px);
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+@keyframes walkingL {
+    0% {
+        opacity: 1
+    }
+
+    50% {
+        opacity: 0.3;
+        transform: scale(0.8) translateX(-15px);
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+@media screen and (min-width: 380px) and (max-width: 700px) {
+    aside a {
+        width: 80%;
+        box-sizing: border-box
+    }
+}
+@media screen and (min-width: 1px) and (max-width: 380px) {
+    aside a {
+        width: 100%;
+        box-sizing: border-box
+    }
+}
+@media screen and (min-width: 1px) and (max-width: 380px) {
+    article {
+        margin: 20px 0;
+
+    }
+}

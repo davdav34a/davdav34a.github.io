@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url(./assets/notAlcohol.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+
+
+
+        header {
+            background-color: #ffffff96;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        header button {
+            width: 20%;
+            max-width: 100px;
+            background: none;
+            border: none;
+            aspect-ratio: 1/1;
+            box-shadow: inset 0px 0px 20px 0px #ff0000
+        }
+
+        header img {
+            width: 100%;
+        }
+
+        footer {
+            display: flex;
+            background-color: #ffffff5c;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+        }
+
+        main {
+            color: white;
+        }
+
+        footer p {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        ul {
+            margin: 0 10px 50px 10px
+        }
+
+
+
+
+        #sodasUl {
+            background-color: #4f260091;
+            padding: 30px 60px;
+            box-shadow: inset #10ff00 0px 0px 20px 0px;
+            text-shadow: #000000d1 0px 1px 10px;
+        }
+
+        #watersUl {
+            background-color: #001e4f8f;
+            padding: 10px 60px;
+            box-shadow: inset #005dff 0px 0px 20px 0px;
+            text-shadow: #000000d1 0px 1px 10px;
+        }
+
+        #watersUl strong {
+            font-size: larger;
+            color: #0900ff;
+            text-shadow: 1px -1px 0px #000000, 0px 0px 12px #ffffff
+        }
+
+        #sodasUl strong {
+            font-size: larger;
+            color: #570202;
+            text-shadow: 2px 2px 0px #ff004e, 0px 0px 12px #ffffff
+        }
+
+
+        .lastLi {
+            padding-bottom: 10px;
+        }
+
+        li {
+            padding-top: 10px;
+            text-shadow: 1px 1px black
+        }
+
+        h2 {
+            padding-left: 10px;
+            margin-top: 0;
+        }
+
+        #sodasH2 {
+            background: linear-gradient(to right, #10ff00, #ffffff00);
+            color: #920000;
+            text-shadow: 1px -1px 0px white;
+        }
+
+        #watersH2 {
+            background: linear-gradient(to right, #0900ff, #ffffff00);
+            color: #00ffff;
+            text-shadow: 1px -1px 0px #000000;
+        }
+
+
+
+        h1 {
+            text-shadow: 1px 1px #0026ff;
+            color: black;
+        }
+
+        .btnActive {
+            box-shadow: 0px 0px 20px 20px #0030ff;
+        }
+    </style>
+  <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+    <header>
+        <button class="btnActive" id="beveragesBtn">
+            <img src="./assets/cola.png" alt="beverages">
+        </button>
+        <button  id="notAlcoholicBtn">
+            <img src="./assets/coffee.png" alt="not alcoholic ">
+        </button>
+        <button id="alcoholicBtn">
+            <img src="./assets/alcohol.png" alt="alcoholic ">
+        </button>
+    </header>
+    <main>
+        <h1>Not Alcoholic Drinks</h1>
+
+        <h2 id="watersH2">Waters</h2>
+
+        <ul id="watersUl">
+            <li><strong>Still Water</strong> <em>500 ml</em>:<br> A refreshing and essential beverage.</li>
+            <li><strong>Sparkling Water</strong> <em>500 ml</em>:<br> Carbonated water that provides a fizzy experience.
+            </li>
+            <li><strong>Tonic Water</strong> <em>500 ml</em>:<br> A carbonated soft drink that contains quinine.</li>
+            <li class="lastLi"><strong>Flavored Sparkling Water</strong> <em>500 ml</em>:<br> This carbonated beverage
+                is infused with natural fruit flavors.</li>
+        </ul>
+
+        <h2 id="sodasH2">Sodas</h2>
+        <ul id="sodasUl">
+            <li><strong>Coca-Cola</strong> <em>330 ml</em>:<br> A classic carbonated soft drink.</li>
+            <li><strong>Fanta Orange</strong> <em>330 ml</em>:<br> This fruity soda has a bold orange flavor.</li>
+            <li><strong>Sprite</strong> <em>330 ml</em>:<br> With its crisp lemon-lime taste.</li>
+            <li class="lastLi"><strong>Root Beer</strong> <em>330 ml</em>:<br> A unique and flavorful soda.
+            </li>
+        </ul>
+
+    </main>
+    <footer>
+        <footer>
+            <p>&copy; 2025 Cocktail Bar Showcase. All rights reserved.</p>
+            <a href="./assets/menu.pdf" download>Download menu</a>
+            <p><a href="./legal.html">Legal</a> | <a href="./privacy.html">Privacy</a> | <a href="./contact.html">Contact</a></p>
+        </footer>
+    </footer>
+</body>
+
+</html>
+
+<script>
+    notAlcoholicBtn.addEventListener("click", () => { window.location.href = "coffee.html" }, true)
+    alcoholicBtn.addEventListener("click", () => { window.location.href = "index.html" }, true)
+    beveragesBtn.addEventListener("click", () => { window.location.href = "beverages.html" }, true)
+</script>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events | Manila Bar</title>
+  <meta name="description"
+    content="Discover events at Manila Bar: karaoke nights, DJs, and special promotions in Manila. Join the fun!">
+  <meta name="keywords" content="events Manila, karaoke bar Manila, DJ bar Manila">
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const navToggle = document.querySelector('.nav-toggle');
+      const navMenu = document.querySelector('.nav-menu');
+
+      navToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+      });
+    });
+  </script>
+  <!-- Dati strutturati Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BarOrPub",
+    "name": "Manila Bar",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "123 Rizal Avenue",
+      "addressLocality": "Manila",
+      "addressRegion": "Metro Manila",
+      "addressCountry": "PH"
+    },
+    "telephone": "+63 912 345 6789",
+    "openingHours": "Mo-Su 17:00-23:00",
+    "servesCuisine": "Cocktail, Snack"
+  }
+  </script>
+  <style>
+    /* Reset base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #f9f9f9;
+    }
+
+    /* Header */
+    header {
+      background: #ff6f61;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .logo h1 {
+      font-size: 1.8rem;
+    }
+
+    .nav {
+      margin-top: 1rem;
+    }
+
+    .nav-menu {
+      list-style: none;
+      display: none;
+    }
+
+    .nav-menu.active {
+      display: block;
+    }
+
+    .nav-menu li {
+      margin: 0.5rem 0;
+    }
+
+    .nav-menu a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .nav-toggle {
+      background: none;
+      border: none;
+      color: #fff;
+      font-size: 1.5rem;
+      cursor: pointer;
+      display: block;
+    }
+
+    /* Main */
+    main {
+      padding: 1rem;
+      text-align: center;
+    }
+
+    main h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .event {
+      margin: 1rem 0;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 1rem;
+    }
+
+    .event img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .event h3 {
+      font-size: 1.2rem;
+      margin: 0.5rem 0;
+    }
+
+    .event p {
+      font-size: 0.9rem;
+    }
+
+    .cta {
+      display: inline-block;
+      background: #28a745;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 1rem;
+    }
+
+    /* Footer */
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #ff6f61;
+      text-decoration: none;
+    }
+
+    /* Desktop */
+    @media (min-width: 768px) {
+      .nav-toggle {
+        display: none;
+      }
+
+      .nav-menu {
+        display: flex;
+        justify-content: center;
+      }
+
+      .nav-menu li {
+        margin: 0 1rem;
+      }
+
+      main {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .event {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        text-align: left;
+      }
+
+      .event img {
+        max-width: 200px;
+      }
+    }
+  </style>
+  <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <h1>Manila Bar</h1>
+    </div>
+    <nav class="nav">
+      <button class="nav-toggle">☰</button>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="eventi.html">Events</a></li>
+        <li><a href="contatti.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2>Next Events</h2>
+    <div class="event">
+      <img src="img/karaoke-night.jpg" alt="Serata karaoke Manila Bar">
+      <div>
+        <h3>Karaoke Night</h3>
+        <p>April 25, 2025, 8:00 PM | Sing with us! Free entry.</p>
+      </div>
+    </div>
+    <div class="event">
+      <img src="img/dj-party.jpg" alt="DJ Party Manila Bar">
+      <div>
+        <h3>DJ Party</h3>
+        <p>April 30, 2025, 9:00 PM | Dance with the best DJs in Manila.</p>
+      </div>
+    </div>
+    <a href="contatti.html" class="cta">Book your spot!</a>
+    
+  </main>
+  <footer>
+    <p>Manila Bar, 123 Rizal Avenue, Manila | +63 912 345 6789</p>
+    <p><a href="https://instagram.com/manilabar">Instagram</a> | <a href="https://wa.me/639123456789">WhatsApp</a></p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

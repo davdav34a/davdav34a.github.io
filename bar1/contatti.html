@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contatti | Manila Bar</title>
+  <meta name="description"
+    content="Contact Manila Bar: find our address, WhatsApp number, and map. Visit the best bar in Manila!">
+  <meta name="keywords" content="contacts Manila bar, Manila bar, cocktail bar Manila">
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const navToggle = document.querySelector('.nav-toggle');
+      const navMenu = document.querySelector('.nav-menu');
+
+      navToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+      });
+    });
+  </script>
+  <!-- Dati strutturati Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BarOrPub",
+    "name": "Manila Bar",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "123 Rizal Avenue",
+      "addressLocality": "Manila",
+      "addressRegion": "Metro Manila",
+      "addressCountry": "PH"
+    },
+    "telephone": "+63 912 345 6789",
+    "openingHours": "Mo-Su 17:00-23:00",
+    "servesCuisine": "Cocktail, Snack"
+  }
+  </script>
+  <style>
+    /* Reset base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #f9f9f9;
+    }
+
+    /* Header */
+    header {
+      background: #ff6f61;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .logo h1 {
+      font-size: 1.8rem;
+    }
+
+    .nav {
+      margin-top: 1rem;
+    }
+
+    .nav-menu {
+      list-style: none;
+      display: none;
+    }
+
+    .nav-menu.active {
+      display: block;
+    }
+
+    .nav-menu li {
+      margin: 0.5rem 0;
+    }
+
+    .nav-menu a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .nav-toggle {
+      background: none;
+      border: none;
+      color: #fff;
+      font-size: 1.5rem;
+      cursor: pointer;
+      display: block;
+    }
+
+    /* Main */
+    main {
+      padding: 1rem;
+      text-align: center;
+    }
+
+    main h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .contact-info {
+      margin: 1rem 0;
+    }
+
+    .contact-info p {
+      font-size: 1rem;
+      margin: 0.5rem 0;
+    }
+
+    .map {
+      margin: 1rem 0;
+    }
+
+    .map iframe {
+      width: 100%;
+      height: 300px;
+      border: 0;
+    }
+
+    .cta {
+      display: inline-block;
+      background: #28a745;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 1rem;
+    }
+
+    /* Footer */
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #ff6f61;
+      text-decoration: none;
+    }
+
+    /* Desktop */
+    @media (min-width: 768px) {
+      .nav-toggle {
+        display: none;
+      }
+
+      .nav-menu {
+        display: flex;
+        justify-content: center;
+      }
+
+      .nav-menu li {
+        margin: 0 1rem;
+      }
+
+      main {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .contact-info {
+        max-width: 600px;
+        margin: 1rem auto;
+      }
+    }
+  </style>
+  <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <h1>Manila Bar</h1>
+    </div>
+    <nav class="nav">
+      <button class="nav-toggle">☰</button>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="eventi.html">Events</a></li>
+        <li><a href="contatti.html">Contact</a></li>
+        </ul>
+        </nav>
+        </header>
+        <main>
+        <h2>Contact Us</h2>
+    <div class="contact-info">
+      <p><strong>Address:</strong> 123 Rizal Avenue, Manila, Metro Manila, Philippines</p>
+      <p><strong>Phone/WhatsApp:</strong> <a href="https://wa.me/639123456789">+63 912 345 6789</a></p>
+      <p><strong>Hours:</strong> Mon-Sun, 17:00-23:00</p>
+    </div>
+    <div class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.373723456789!2d120.97866561483936!3d14.577584989819885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397ca03571ec7df%3A0x7e7b0c6c7e7b0c6c!2sRizal%20Avenue%2C%20Manila%2C%20Metro%20Manila%2C%20Philippines!5e0!3m2!1sen!2sph!4v1623456789012!5m2!1sen!2sph"
+        allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <!-- Calendly inline widget begin -->
+    <div class="calendly-inline-widget" data-url="https://calendly.com/davideva993"
+      style="min-width:320px;height:700px;"></div>
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+    <!-- Calendly inline widget end -->
+    <a href="https://wa.me/639123456789" class="cta">Contact Us on WhatsApp</a>
+  </main>
+  <footer>
+    <p>Manila Bar, 123 Rizal Avenue, Manila | +63 912 345 6789</p>
+    <p><a href="https://instagram.com/manilabar">Instagram</a> | <a href="https://wa.me/639123456789">WhatsApp</a></p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
