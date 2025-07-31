@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Showcase Website for Restaurants</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+        :root {
+            --beige: #F5E8C7;
+            --visitedGrey: #7f8c8d;
+            --blue: #2E4A62;
+            --lightBlue: #4DA7B0;
+            --violet: #9600ff;
+            --blueC: rgb(1 124 255)
+        }
+
+        h1 {
+            font-family: Montserrat;
+            text-align: center;
+            padding: 2vh 0 0 0;
+            margin: 0;
+            height: 6vh;
+            background-color: var(--blue);
+            color: white;
+            text-shadow: 1px 1px 0px #00aaff, 1px 1px 15px #00aaff;
+        }
+
+        body {
+            color: var(--blue);
+            background-color: var(--beige);
+            font-family: "Roboto", sans-serif;
+            margin: 0
+        }
+
+        p {
+            margin: 0;
+        }
+
+        a {
+            color: var(--blue);
+        }
+
+        a:hover {
+            color: var(--lightBlue);
+        }
+
+        a:visited {
+            color: var(--visitedGrey);
+        }
+
+
+        section {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        #modelsOverview {
+            height: 52vh;
+            margin-top: 5vh;
+        }
+
+        #offerSummary {
+            height: 20vh;
+            margin-top: 5vh;
+            box-shadow: inset 8px 2px 14px -5px var(--blue), inset -6px -6px 14px 2px beige
+        }
+
+        footer {
+            height: 10vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        h2 {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            text-shadow: 2px 2px white;
+
+        }
+
+        ul {
+            margin: 0;
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+            flex-direction: column;
+        }
+
+        li {
+            text-shadow: var(--blue) 0px 0px 10px;
+            text-shadow: 1px 1px white;
+            font-weight: 600;
+            margin-left: 30px;
+        }
+
+
+        img {
+            width: 100%;
+            ;
+        }
+
+        a {
+            width: 25%;
+            height: 75%;
+        }
+
+        article {
+            display: flex;
+            padding: 10px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(to bottom, var(--blue), white);
+        }
+
+
+        article h3 {
+            margin: 0;
+            padding: 10px 0;
+            color: white;
+        }
+
+        strong {
+            text-shadow: 1px 1px 4px var(--violet), 1px 1px 15px #ffffff;
+        }
+
+        #picA {
+            border-radius: 50% 10%;
+        }
+
+        #picC {
+            border-radius: 50%;
+        }
+
+        #artA {
+            box-shadow: 0px 0px 20px 0px var(--violet);
+            transition: transform 0.5s, box-shadow 0.5s, background 0.5s;
+        }
+
+        #artA:hover {
+            transform: scale(1.05);
+            box-shadow: inset 0px 0px 20px 0px var(--violet);
+            background: var(--blue)
+        }
+
+        #artA h3 {
+            color: var(--violet);
+            text-shadow: 1px 1px white;
+        }
+
+        #artC {
+            box-shadow: 0px 0px 20px 0px var(--blueC);
+            transition: transform 0.5s, box-shadow 0.5s, background 0.5s;
+        }
+
+        #artC:hover {
+            transform: scale(1.05);
+            box-shadow: inset 0px 0px 20px 0px var(--blueC);
+            background: var(--blue)
+        }
+
+        #artC h3 {
+            color: var(--blueC);
+            text-shadow: 1px 1px white;
+        }
+
+        #artB {
+            box-shadow: 0px 0px 20px 3px black;
+            transition: transform 0.5s, box-shadow 0.5s, background 0.5s;
+        }
+
+        #artB:hover {
+            transform: scale(1.05);
+            box-shadow: inset 0px 0px 20px 3px black;
+            background: var(--blue)
+        }
+
+        #artB h3 {
+            color: black;
+            text-shadow: 1px 1px white;
+        }
+
+
+        @media screen and (min-width: 1px) and (max-width: 860px) {
+
+            #modelsOverview {
+                height: auto;
+                margin-top: 5vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+
+            a {
+                width: 80%;
+                padding: 20px 0;
+            }
+
+            h1 {
+                height: auto;
+            }
+            article{
+                margin: 10px 0;
+            }
+
+            ul {
+                display: flex;
+                flex-direction: column;
+            }
+            #offerSummary{
+                padding: 20px 0;
+            }
+
+            footer {
+                margin-top: 20px;
+                flex-direction: column;
+            }
+            ul{
+                padding: 0;
+            }
+            #offerSummary{
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1><strong>Choose and customize</strong> your showcase website</h1>
+    <main>
+        <section id="modelsOverview">
+            <h2>Models</h2>
+            <a href="./list/index0.html">
+                <article id="artA">
+                    <h3>Culinary</h3>
+                    <img id="picA" src="assets/food.jpg" alt="Descrizione del modello A">
+                </article>
+            </a>
+            <a href="./Fotografo/indexF.html">
+                <article id="artB">
+                    <h3>Creative</h3>
+                    <img id="picB" src="./assets/photographer.jpg" alt="Descrizione del modello B">
+                </article>
+            </a>
+            <a href="./Trekking_en/index.html">
+                <article id="artC">
+                    <h3>Community</h3>
+                    <img id="picC" src="assets/team.jpg" alt="Descrizione del modello C">
+                </article>
+            </a>
+        </section>
+       
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>Email: <a href="mailto:mail@mail.com">mail@mail.com</a></p>
+        </div>
+        <div class="footer-legal">
+            <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of service</a></p>
+            <p>&copy; 2025 davdav34a. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

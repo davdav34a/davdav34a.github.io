@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url(./assets/back.png);
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+        header {
+            background-color: #ffffff96;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        header button {
+            width: 20%;
+            max-width: 100px;
+            background: none;
+            border: none;
+            aspect-ratio: 1/1;
+            box-shadow: inset 0px 0px 20px 0px #ff0000
+        }
+
+        header img {
+            width: 100%;
+        }
+
+        footer {
+            display: flex;
+            background-color: #ffffff5c;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+        }
+
+        main {
+            color: white;
+        }
+
+        footer p {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        ul {
+            margin: 0 10px 50px 10px
+        }
+
+
+
+
+        #winesUl {
+            background-color: #4f003e91;
+            padding: 30px 60px;
+            box-shadow: inset #ff0000 0px 0px 20px 0px;
+            text-shadow: #000000d1 0px 1px 10px;
+        }
+
+        #beersUl {
+            background-color: #4f41008f;
+            padding: 10px 60px;
+            box-shadow: inset #ffee00 0px 0px 20px 0px;
+            text-shadow: #000000d1 0px 1px 10px;
+        }
+
+        #beersUl strong {
+            font-size: larger;
+            color: #ffee00;
+            text-shadow: 2px 2px 0px #000000, 0px 0px 12px #ffffff
+        }
+
+        #winesUl strong {
+            font-size: larger;
+            color: #570202;
+            text-shadow: 2px 2px 0px #ff004e, 0px 0px 12px #ffffff
+        }
+
+        #liquorsUl strong {
+            font-size: larger;
+            color: #c47f00;
+            text-shadow: 2px 2px 0px #000000, 0px 0px 12px black
+        }
+
+        .lastLi {
+            padding-bottom: 10px;
+        }
+
+        li {
+            padding-top: 10px;
+            text-shadow: 1px 1px black
+        }
+
+        h2 {
+            padding-left: 10px;
+            margin-top: 0;
+        }
+
+        #winesH2 {
+            background: linear-gradient(to right, #570202, #ffffff00);
+            color: #920000;
+            text-shadow: 1px -1px 0px white;
+        }
+
+        #beersH2 {
+            background: linear-gradient(to right, #c4a300, #ffffff00);
+            color: #483333;
+            text-shadow: 1px -1px 0px white;
+        }
+
+        #liquorsH2 {
+            background: linear-gradient(to right, #c47f00, #ffffff00);
+            color: #000000;
+            text-shadow: 1px -1px 0px white;
+        }
+
+        #liquorsUl {
+            background-color: #4f2a0091;
+            padding: 10px 60px;
+            box-shadow: inset #ff8600 0px 0px 20px 0px;
+            text-shadow: #000000d1 0px 1px 10px;
+        }
+
+        h1 {
+            text-shadow: 1px 1px #ffdb00, 3px -3px #d70000;
+            color: black;
+        }
+
+        .btnActive {
+            box-shadow: 0px 0px 20px 20px #0030ff;
+        }
+    </style>
+  <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+    <header>
+        <button id="beveragesBtn">
+            <img src="./assets/cola.png" alt="beverages">
+        </button>
+        <button id="notAlcoholicBtn">
+            <img src="./assets/coffee.png" alt="not alcoholic ">
+        </button>
+        <button class="btnActive" id="alcoholicBtn">
+            <img src="./assets/alcohol.png" alt="alcoholic ">
+        </button>
+    </header>
+    <main>
+        <h1>Alcoholic Drinks</h1>
+
+        <h2 id="winesH2">Wines</h2>
+
+        <ul id="winesUl">
+            <li><strong>Merlot</strong> <em>175 ml</em>: <br>A smooth and fruity red wine known for its velvety texture
+                and
+                flavors of black cherry, plum, and chocolate, making it a popular choice among wine lovers.</li>
+            <li><strong>Cabernet Sauvignon</strong> <em>175 ml</em>: <br> This robust red wine boasts strong tannins and
+                rich
+                flavors of blackberry, dark chocolate, and green pepper, often considered a classic pairing with red
+                meats.
+            </li>
+            <li><strong>Pinot Noir</strong> <em>175 ml</em>: <br> Light to medium-bodied red wine, celebrated for its
+                delicate
+                structure and bright flavors of cherry, raspberry, and floral notes, often enjoyed slightly chilled.
+            </li>
+            <li class="lastLi"><strong>Cognac</strong> <em>50 ml</em>: <br> A luxurious type of brandy produced in the
+                Cognac region of
+                France, known for its smoothness and complex flavors, including dried fruit, vanilla, and spices.</li>
+        </ul>
+        <h2 id="beersH2">Beers</h2>
+        <ul id="beersUl">
+            <li><strong>Stone Brewing</strong> <em>pint - 568 ml</em>:<br> Renowned for their bold and hoppy craft
+                beers,
+                Stone Brewing offers a range of styles, including their popular Arrogant Bastard Ale.</li>
+            <li><strong>Guinness</strong> <em>pint - 568 ml</em>:<br> This iconic Irish stout is famous for its dark
+                color,
+                creamy head, and rich flavor profile, characterized by notes of coffee and chocolate.</li>
+            <li><strong>Lagunitas</strong> <em>pint - 568 ml</em>:<br> Known for their hop-forward IPAs, Lagunitas
+                Brewing
+                Company offers a variety of innovative brews, with the IPA being a flagship favorite.</li>
+            <li class="lastLi"><strong>Peroni</strong> <em>330 ml</em>:<br> An Italian pale lager, Peroni is celebrated
+                for its
+                refreshing
+                taste, crisp finish, and hints of citrus, making it a go-to beer for casual occasions.</li>
+        </ul>
+
+        <h2 id="liquorsH2">Liquors</h2>
+
+        <ul id="liquorsUl">
+            <li><strong>Vodka</strong> <em>50 ml</em>:<br> A clear spirit distilled from grains or potatoes, vodka is
+                known
+                for its versatility in cocktails, featuring a clean and neutral flavor profile.</li>
+            <li><strong>Rum</strong> <em>50 ml</em>:<br> Made from sugarcane or molasses, rum comes in various styles,
+                from
+                light to dark, and is celebrated for its sweet and fruity flavors, often used in tropical cocktails.
+            </li>
+            <li><strong>Whisky</strong> <em>50 ml</em>:<br> Aged in wooden casks, whisky presents a wide array of
+                flavors
+                depending on its region and type, known for its rich, smoky, or sweet character.</li>
+            <li class="lastLi"><strong>Cognac</strong> <em>50 ml</em>:<br> This high-quality brandy from France offers a
+                complex and
+                smooth
+                flavor, making it a favorite for sipping or in upscale cocktails.</li>
+        </ul>
+
+    </main>
+    <footer>
+        <footer>
+            <p>&copy; 2025 Cocktail Bar Showcase. All rights reserved.</p>
+            <a href="./assets/menu.pdf" download>Download menu</a>
+            <p><a href="./legal.html">Legal</a> | <a href="./privacy.html">Privacy</a> | <a
+                    href="./contact.html">Contact</a></p>
+        </footer>
+    </footer>
+</body>
+
+</html>
+<script>
+    notAlcoholicBtn.addEventListener("click", () => { window.location.href = "coffee.html" }, true)
+    alcoholicBtn.addEventListener("click", () => { window.location.href = "index.html" }, true)
+    beveragesBtn.addEventListener("click", () => { window.location.href = "beverages.html" }, true)
+</script>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url(./assets/coffee.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+        header {
+            background-color: #ffffff96;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        header button {
+            width: 20%;
+            max-width: 100px;
+            background: none;
+            border: none;
+            aspect-ratio: 1/1;
+            box-shadow: inset 0px 0px 20px 0px #ff0000
+        }
+
+        header img {
+            width: 100%;
+        }
+
+        footer {
+            display: flex;
+            background-color: #ffffff5c;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+        }
+
+        main {
+            color: black;
+        }
+
+        footer p {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        ul {
+            margin: 0 10px 50px 10px
+        }
+
+
+
+
+        #teasUl {
+            background-color: #2e004f91;
+            padding: 30px 60px;
+            box-shadow: inset #ff00e2 0px 0px 20px 0px;
+            color:white
+
+        }
+
+        #coffeesUl {
+            background-color: #ffffff7d;
+            padding: 10px 60px;
+            box-shadow: inset #795548 0px 0px 20px 20px;
+            text-shadow: #000000d1 0px 1px 10px;
+        }
+
+        #coffeesUl strong {
+            font-size: larger;
+            color: #795548;
+            text-shadow: 1px 1px 0px #000000, 0px 0px 12px #ffffff
+        }
+
+        #teasUl strong {
+            font-size: larger;
+            color: #570202;
+            text-shadow: 2px 2px 0px #ff00ea, 0px 0px 12px #ffffff
+        }
+
+
+
+
+        li {
+            padding-top: 10px;
+        }
+
+        h2 {
+            padding-left: 10px;
+            margin-top: 0;
+        }
+
+        #teasH2 {
+            background: linear-gradient(to right, #ff00ea, #ffffff00);
+            color: black;
+            text-shadow: 1px -1px 0px rgb(255, 255, 255);
+        }
+
+        #coffeesH2 {
+            background: linear-gradient(to right, #000000, #ffffff00);
+            color: #795548;
+            text-shadow: 1px -1px 0px #ffffff;
+        }
+
+
+
+        h1 {
+            text-shadow: -2px 2px #ffffff, 1px -1px 0px #795548;
+            color: black;
+        }
+
+        .btnActive {
+            box-shadow: 0px 0px 20px 20px #0030ff;
+        }
+    </style>
+  <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+    <header>
+        <button id="beveragesBtn">
+            <img src="./assets/cola.png" alt="beverages">
+        </button>
+        <button class="btnActive" id="notAlcoholicBtn">
+            <img src="./assets/coffee.png" alt="not alcoholic ">
+        </button>
+        <button id="alcoholicBtn">
+            <img src="./assets/alcohol.png" alt="alcoholic ">
+        </button>
+    </header>
+    <main>
+        <h1>Hot Drinks</h1>
+
+        <h2 id="coffeesH2">Coffees</h2>
+
+        <ul id="coffeesUl">
+            <li><strong>Espresso</strong> <em>30 ml</em>:<br> A concentrated coffee brewed by forcing hot water through
+                finely-ground coffee beans, known for its rich flavor and creamy consistency, often served as the base
+                for other coffee drinks.</li>
+            <li><strong>Cappuccino</strong> <em>250 ml</em>:<br> A classic coffee drink made with equal parts of
+                espresso, steamed milk, and milk foam, offering a rich and creamy texture that's perfect for coffee
+                lovers.</li>
+            <li><strong>Flat White</strong> <em>250 ml</em>:<br> Originating from Australia and New Zealand, this
+                beverage consists of espresso topped with microfoam, creating a velvety coffee experience without the
+                excess milk of a latte.</li>
+            <li><strong>Mocha</strong> <em>250 ml</em>:<br> A rich combination of espresso, steamed milk, and chocolate
+                syrup, typically topped with whipped cream, making it a perfect treat for those who love both coffee and
+                chocolate.</li>
+            <li><strong>Americano</strong> <em>250 ml</em>:<br> Made by diluting a shot of espresso with hot water,
+                giving it a similar strength to brewed coffee while retaining the distinct espresso flavor.</li>
+            <li><strong>Macchiato</strong> <em>30 ml</em>:<br> A shot of espresso "stained" with a small amount of
+                steamed milk or milk foam, focusing on the bold flavor of the coffee.</li>
+            <li><strong>Affogato</strong> <em>150 ml</em>:<br> A delightful dessert made by pouring a shot of hot
+                espresso over a scoop of vanilla ice cream or gelato, creating a delicious contrast of hot and cold.
+            </li>
+        </ul>
+
+        <h2 id="teasH2">Teas</h2>
+        <ul id="teasUl">
+            <li><strong>Earl Grey Tea</strong> <em>250 ml</em>:<br> A traditional black tea flavored with oil of
+                bergamot, offering a fragrant and unique taste. Often enjoyed with a splash of milk or a twist of lemon.
+            </li>
+            <li><strong>Jasmine Green Tea</strong> <em>250 ml</em>:<br> A delicate green tea infused with jasmine
+                blossoms, providing a floral aroma and refreshing flavor, perfect for relaxation.</li>
+            <li><strong>Rooibos Tea</strong> <em>250 ml</em>:<br> This caffeine-free herbal tea from South Africa has a
+                naturally sweet and earthy flavor, often enjoyed plain or with milk and honey.</li>
+            <li><strong>Oolong Tea</strong> <em>250 ml</em>:<br> A partially oxidized tea that lies between green and
+                black tea, offering a complex flavor profile with floral and fruity notes.</li>
+        </ul>
+
+    </main>
+    <footer>
+        <footer>
+            <p>&copy; 2025 Cocktail Bar Showcase. All rights reserved.</p>
+            <a href="./assets/menu.pdf" download>Download menu</a>
+            <p><a href="./legal.html">Legal</a> | <a href="./privacy.html">Privacy</a> | <a href="./contact.html">Contact</a></p>
+        </footer>
+    </footer>
+</body>
+
+</html>
+
+<script>
+    notAlcoholicBtn.addEventListener("click",()=>{window.location.href = "coffee.html"}, true)
+    alcoholicBtn.addEventListener("click",()=>{window.location.href = "index.html"}, true)
+    beveragesBtn.addEventListener("click",()=>{window.location.href = "beverages.html"}, true)
+</script>

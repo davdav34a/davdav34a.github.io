@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manila Bar | Cocktail and Events in Manila</title>
+  <meta name="description"
+    content="Discover Manila Bar: unique cocktails, karaoke nights, and a lively atmosphere in Manila. Visit today!">
+  <meta name="keywords" content="Manila bar, cocktail bar, events Manila, karaoke bar">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #f9f9f9;
+    }
+
+    /* Header */
+    header {
+      background: #ff6f61;
+      /* Colore vivace, attraente */
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .logo h1 {
+      font-size: 1.8rem;
+    }
+
+    .nav {
+      margin-top: 1rem;
+    }
+
+    .nav-menu {
+      list-style: none;
+      display: none;
+    }
+
+    .nav-menu.active {
+      display: block;
+    }
+
+    .nav-menu li {
+      margin: 0.5rem 0;
+    }
+
+    .nav-menu a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .nav-toggle {
+      background: none;
+      border: none;
+      color: #fff;
+      font-size: 1.5rem;
+      cursor: pointer;
+      display: block;
+    }
+
+    /* Hero */
+    .hero {
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .hero img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .hero h2 {
+      font-size: 1.5rem;
+      margin: 0.5rem 0;
+    }
+
+    .hero p {
+      font-size: 1rem;
+    }
+
+    .cta {
+      display: inline-block;
+      background: #28a745;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 1rem;
+    }
+
+    /* Highlights */
+    .highlights {
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .highlights h2 {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+    }
+
+    .highlight {
+      margin: 1rem 0;
+    }
+
+    .highlight img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .highlight p {
+      font-size: 0.9rem;
+    }
+
+    /* Footer */
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #ff6f61;
+      text-decoration: none;
+    }
+
+    /* Desktop */
+    @media (min-width: 768px) {
+      .nav-toggle {
+        display: none;
+      }
+
+      .nav-menu {
+        display: flex;
+        justify-content: center;
+      }
+
+      .nav-menu li {
+        margin: 0 1rem;
+      }
+
+      .hero h2 {
+        font-size: 2rem;
+      }
+
+      .highlights {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+      }
+
+      .highlight {
+        max-width: 300px;
+      }
+    }
+  </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const navToggle = document.querySelector('.nav-toggle');
+      const navMenu = document.querySelector('.nav-menu');
+
+      navToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+      });
+    });
+  </script>
+  <!-- Dati strutturati Schema.org per bar -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BarOrPub",
+    "name": "Manila Bar",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "123 Rizal Avenue",
+      "addressLocality": "Manila",
+      "addressRegion": "Metro Manila",
+      "addressCountry": "PH"
+    },
+    "telephone": "+63 912 345 6789",
+    "openingHours": "Mo-Su 17:00-23:00",
+    "servesCuisine": "Cocktail, Snack"
+  }
+  </script>
+  <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <h1>Manila Bar</h1>
+    </div>
+    <nav class="nav">
+      <button class="nav-toggle">☰</button>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="eventi.html">Events</a></li>
+        <li><a href="contatti.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <img src="img/bar-hero.jpg" alt="Manila Bar atmosphere">
+      <h2>Welcome to the Manila Bar!</h2>
+      <p>Unique cocktails, karaoke, and unforgettable nights in Manila.</p>
+      <a href="contatti.html" class="cta">Visit Today!</a>
+    </section>
+    <section class="highlights">
+      <h2>Why Choose Us</h2>
+      <div class="highlight">
+        <img src="img/cocktail.jpg" alt="Cocktail Manila Bar">
+        <p>Craft cocktails starting at 150 PHP.</p>
+      </div>
+      <div class="highlight">
+        <img src="img/karaoke.jpg" alt="Karaoke Manila Bar">
+        <p>Karaoke nights every Friday!</p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>Manila Bar, 123 Rizal Avenue, Manila | +63 912 345 6789</p>
+    <p><a href="https://instagram.com/manilabar">Instagram</a> | <a href="https://wa.me/639123456789">WhatsApp</a></p>
+  </footer>
+
+</body>
+
+</html>

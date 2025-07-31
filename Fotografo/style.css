@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne');
+
+* {
+    font-family: 'parisienne', cursive;
+}
+
+
+#adress,
+#telephone,
+#email,
+#name {
+    display: flex;
+    flex-direction: row;
+}
+
+#adress img,
+#telephone img,
+#email img,
+#name img {
+    width: 30px;
+}
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 5vh;
+    align-items: center
+}
+
+#adress h2,
+#telephone h2,
+#email h2,
+#name h1 {
+    margin: 0 0 0 20px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 3vh 6vh;
+    box-sizing: border-box;
+    height: 22vh;
+}
+
+#about,
+#personal-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+header h1 {
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+}
+
+.pictures h2 {
+    margin: 0
+}
+
+.not-index-page {
+    margin: 20px;
+}
+
+.pic_info {
+    display: flex;
+    font-size: large;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.pin {
+    width: 25px;
+    margin: -52px 0 40px 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+html {
+    box-shadow: inset 10px 10px 20px 0px #0000004d;
+    min-height: 100%;
+}
+
+.service-price {
+    position: absolute;
+    transform: translate(5px, 12px) rotate(30deg);
+    transform-origin: left;
+    font-size: larger;
+    z-index: -1;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+}
+
+#homePictures{
+    height: 73vh;
+}
+
+.pictures {
+    font-size: x-large;
+    padding-top: 8vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+    width: 100%;
+    align-content: space-between;
+
+}
+.smallScreen{
+    display: none
+}
+
+.picture_element {
+    justify-content: flex-start;
+    box-shadow: 10px 10px 5px #000000ab;
+    max-width: 430px;
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #eedcba73;
+    padding: 40px 20px 20px 20px;
+}
+
+#logo_container img {
+    height: 100%;
+    max-width: 150px;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-name: logo-animation;
+}
+
+img {
+    object-fit: contain;
+    width: 100%;
+}
+
+header span:hover,
+header span:active {
+    transform: scale(1.1);
+}
+
+@keyframes logo-animation {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    75% {
+        transform: scale(0.9);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1)
+    }
+}
+
+.picture_element:hover,
+.picture_element:active {
+    animation: pin-animation 4s;
+    animation-timing-function: ease-in-out;
+    transform-origin: top center;
+}
+
+@keyframes pin-animation {
+    25% {
+        rotate: 6deg;
+    }
+
+    50% {
+        rotate: -4deg;
+    }
+
+    75% {
+        rotate: 2deg;
+    }
+
+    100% {
+        rotate: 0deg
+    }
+}
+
+@media screen and (min-width: 1520px) {
+    .not-index-page {
+        margin: 40px;
+    }
+}
+
+@media screen and (min-width: 660px) and (max-width: 840px) {
+
+    #adress,
+    #telephone,
+    #email,
+    #name {
+        display: flex;
+        flex-direction: row;
+        padding-top: 5px;
+    }
+
+    .picture_element {
+        width: 35%;
+        margin-bottom: 50px;
+    }
+
+    #about, #personal-info{
+        font-size: small;
+    }
+    header{
+        padding: 3vh;
+    }
+    #logo_container img{
+        max-width: 125px;
+    }
+
+}
+
+@media screen and (min-width: 460px) and (max-width: 660px) {
+
+    .bigScreen{
+        display: none;
+        
+    }
+    .smallScreen{
+        display: block;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    #logo_container img {
+        height: 100%;
+        width: 100px;
+    }
+
+    header {
+        flex-direction: column;
+        height: auto;
+    }
+
+
+    #logo_container {
+        width: auto;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        padding: 10px 0;
+    
+    }
+    #central_header_container{
+        display: flex;
+
+    }
+
+    #telephone,
+    #email {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    #adress h2,
+    #telephone h2,
+    #email h2,
+    #name h1 {
+        margin: 0 0 0 20px;
+        padding: 5px;
+    }
+
+    .picture_element {
+        margin: 20px;
+        width: 80%;
+    }
+
+    .pin {
+        margin: -50px 0 15px 0;
+    }
+    #homePictures{
+        height: auto;
+        padding-top: 0;
+
+    }
+}
+
+@media screen and (min-width: 1px) and (max-width: 460px) {
+    .bigScreen{
+        display: none;
+        
+    }
+    .smallScreen{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    #central_header_container{
+        display: flex;
+    }
+
+
+    #logo_container img {
+        height: 100%;
+        width: 100px;
+    }
+    #homePictures{
+        height: auto;
+        padding-top: 0;
+    }
+
+    header {
+        flex-direction: column;
+        height: auto;
+    }
+ 
+
+    #logo_container {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+    }
+
+    #telephone,
+    #email {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    #adress h2,
+    #telephone h2,
+    #email h2,
+    #name h1 {
+        margin: 0 0 0 2px;
+        padding: 5px;
+    }
+
+    .picture_element {
+        margin: 20px;
+        width: 80%;
+    }
+
+    .pin {
+        margin: -50px 0 15px 0;
+    }
+
+    #about,
+    #personal-info {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    .service-price {
+        font-size: large;
+    }
+
+}
